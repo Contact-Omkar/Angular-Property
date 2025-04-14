@@ -1,0 +1,21 @@
+<h2 ngNonBindable>String Interpolation {{}}</h2>
+
+<p>String Interpolation is used for data transfer</p>
+<p>It transfer data from ts to html</p>
+
+<h1>{{title}}</h1>
+<hr> 
+<h2>Property Binding - []</h2>
+
+<p>This is used to transfer attribute values from ts to html </p>
+<input type="text" [value]="username" name="username">
+ <hr> 
+<h2>Event Binding - ()</h2>
+<p>Is used to called fuction from ts</p>
+
+<button (click)="clickme()">Click Here</button>
+<hr>
+<h2>Two Way Data Binding - [()]</h2>
+<p>Is used for data transfering from ts to html and html to ts</p>
+<input type="text" name="num" [(ngModel)] = "num"> 
+<p>{{num}}</p>
